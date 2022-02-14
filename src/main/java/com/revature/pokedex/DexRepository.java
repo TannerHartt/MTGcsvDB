@@ -26,6 +26,15 @@ public class DexRepository {
             this.cards.add(sc.next());
         }
     }
+    public String getCard(String name){
+        String result = "";
+      for (String card : this.cards){
+          if (card.contains(name)) {
+              result = card;
+          }
+      }
+      return result;
+    }
 
     public List<String> getCards() {
         return cards;
