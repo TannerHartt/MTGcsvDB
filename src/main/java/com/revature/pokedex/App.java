@@ -13,10 +13,15 @@ public class App {
 
         Tomcat server = new Tomcat();
         server.setBaseDir(System.getProperty("java.io.tmpdir"));
+        //server.setPort(0);
         server.getConnector();
         server.addContext("", null);
+
+
+        server.addServlet("","defaultServlet", new DefaultServlet()).addMapping("/*");
         server.addServlet("","dexServlet", dexService).addMapping("/cards");
         server.addServlet("", "searchFormServlet", sfService).addMapping("/search");
+        //System.out.println("Server running on http://localhost:" +
         try{
             server.start();
         } catch (LifecycleException e) {

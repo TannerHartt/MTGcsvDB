@@ -23,6 +23,8 @@ public class DexRepository {
         Scanner sc = new Scanner(this.file);
         sc.useDelimiter("\n");
         while(sc.hasNext()) {
+            String[] cardColumns = sc.next().split(",");
+            Mtg temp = new Mtg(cardColumns[4]);
             this.cards.add(sc.next());
         }
     }

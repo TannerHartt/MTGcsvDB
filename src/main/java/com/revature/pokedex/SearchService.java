@@ -12,7 +12,7 @@ public class SearchService extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String HTMLForm = "<Html>\n" +
                 "<Head>\n" +
-                "    <Title>Search Pokedex" +
+                "    <Title>Search MTGdata" +
                 "</Title>\n" +
                 "</Head>\n" +
                 "<Body>\n" +
