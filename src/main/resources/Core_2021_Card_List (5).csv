@@ -1,0 +1,286 @@
+Card Name,Card Type,CMC,Color,Rarity
+Alpine Watchdog,Creature,2,W,C
+Angelic Ascension,Instant,2,W,UC
+Anointed Chorister,Creature,1,W,C
+Aven Gagglemaster,Creature,5,W,UC
+Celestial Enforcer,Creature,3,W,C
+Concordia Pegasus,Creature,2,W,C
+Daybreak Charger,Creature,2,W,C
+Defiant Strike,Instant,1,W,C
+Dub,Aura,3,W,C
+Faith's Fetters,Aura,4,W,UC
+Falconer Adept,Creature,4,W,UC
+Feat of Resistance,Instant,2,W,C
+Gale Swooper,Creature,4,W,C
+Griffin Aerie,Enchantment,2,W,UC
+Legion's Judgment,Sorcery,3,W,C
+Light of Promise,Aura,3,W,UC
+Makeshift Battalion,Creature,3,W,C
+Rambunctious Mutt,Creature,5,W,C
+Revitalize,Instant,2,W,C
+Sanctum of Tranquil Light,Enchantment,1,W,UC
+Seasoned Hallowblade,Creature,2,W,UC
+Secure the Scene,Sorcery,5,W,C
+Selfless Savior,Creature,1,W,UC
+Siege Striker,Creature,3,W,UC
+Staunch Shieldmate,Creature,1,W,C
+Swift Response,Instant,2,W,C
+Temped Veteran,Creature,2,W,UC
+Valorous Steed,Creature,5,W,C
+Vryn Wingmare,Creature,3,W,UC
+Warded Battlements,Creature,3,W,C
+Cancel,Instant,3,U,C
+Capture Sphere,Aura,4,U,C
+Enthralling Hold,Aura,5,U,UC
+Frantic Inventory,Instant,2,U,C
+Frost Breath,Instant,3,U,C
+Jeskai Elder,Creature,2,U,UC
+Keen Glidemaster,Creature,2,U,C
+Library Larcenist,Creature,3,U,C
+Lofty Denial,Instant,2,U,C
+Miscast,Instant,1,U,UC
+Mistral Slinger,Creature,3,U,C
+Opt,Instant,1,U,C
+Rain of Revelation,Instant,4,U,UC
+Read the Tides,Sorcery,6,U,C
+Rewind,Instant,4,U,UC
+Riddleform,Enchantment,2,U,UC
+Roaming Ghostlight,Creature,5,U,C
+Rookie Mistake,Instant,1,U,C
+Rousing Read,Aura,3,U,C
+Sanctum of Calm Waters,Enchantment,4,U,UC
+Shipwreck Dowser,Creature,5,U,UC
+Spined Megalodon,Creature,7,U,C
+Tide Skimmer,Creature,4,U,UC
+Tolarian Kraken,Creature,6,U,UC
+Tome Anima,Creature,4,U,C
+Unsubstantiate,Instant,2,U,UC
+Vodalian Arcanist,Creature,2,U,C
+Waker of Waves,Creature,7,U,UC
+Wall of Runes,Creature,1,U,C
+Wishcoin Crab,Creature,4,U,C
+Alchemist's Gift,Instant,1,B,C
+Archfiend's Vessel,Creature,1,B,UC
+Bad Deal,Sorcery,6,B,UC
+Blood Glutton,Creature,5,B,C
+Caged Zombie,Creature,3,B,C
+Carrion Grub,Creature,4,B,UC
+Crypt Lurker,Creature,4,B,C
+Deathbloom Thallid,Creature,3,B,C
+Duress,Sorcery,1,B,C
+Eliminate,Instant,2,B,UC
+Field Imp,Creature,2,B,C
+Finishing Blow,Instant,5,B,C
+Gloom Sower,Creature,7,B,C
+Goremand,Creature,6,B,UC
+Grasp of Darkness,Instant,2,B,C
+Infernal Scarring,Aura,2,B,C
+Kitesail Freebooter,Creature,2,B,C
+Malefic Scythe,Equipment,2,B,UC
+Masked Blackguard,Creature,2,B,C
+Mind Rot,Sorcery,3,B,C
+Pestilent Haze,Sorcery,3,B,UC
+Rise Again,Sorcery,5,B,C
+Sanctum of Stone Fangs,Enchantment,2,B,UC
+Sanguine Indulgence,Sorcery,4,B,C
+Silvermore Ghoul,Creature,3,B,UC
+Skeleton Archer,Creature,4,B,C
+Tavern Swindler,Creature,2,B,UC
+Village Rites,Instant,1,B,C
+Walking Corpse,Creature,2,B,C
+Witch's Cauldron,Artifact,1,B,UC
+Battle-Rattle Shaman,Creature,4,R,UC
+Bolt Hound,Creature,3,R,UC
+Bone Pit Brute,Creature,6,R,C
+Burn Bright,Instant,3,R,C
+Crash Through,Sorcery,1,R,C
+Destructive Tampering,Sorcery,3,R,C
+Furious Rise,Enchantment,3,R,UC
+Furor of the Bitten,Aura,1,R,C
+Goblin Arsonist,Creature,1,R,C
+Goblin Wizardry,Instant,4,R,C
+Havoc Jester,Creature,5,R,UC
+Heartfire Immolator,Creature,2,R,UC
+Hellfire Punisher,Creature,7,R,UC
+Hobblefiend,Creature,2,R,C
+Igneous Cur,Creature,2,R,C
+Kinetic Argur,Creature,4,R,UC
+Ornakke Ogre,Creature,3,R,C
+Pitchburn Devils,Creature,5,R,C
+Sanctum of Shattered Heights,Enchantment,3,R,UC
+Scorching Dragonfire,Instant,2,R,C
+Shock,Instant,1,R,C
+Soul Scar,Instant,3,R,UC
+Spellgroger Weird,Creature,3,R,C
+Sure Strike,Instant,2,R,C
+Thrill of Possibility,Instant,2,R,C
+Traitorous Greed,Sorcery,4,R,UC
+Turn to Slag,Sorcery,5,R,C
+Turret Ogre,Creature,4,R,C
+Unleash Fury,Instant,2,R,UC
+Volcanic Geyser,Instant,2,R,UC
+Burlfist Oak,Creature,4,G,UC
+Canopy Stalker,Creature,4,G,UC
+Colossal Dreadmaw,Creature,6,G,C
+Drowsing Tyrannodon,Creature,2,G,C
+Fierce Empath,Creature,3,G,UC
+Fungal Rebirth,Instant,3,G,UC
+Gnarled Sage,Creature,5,G,C
+Hunter's Edge,Sorcery,4,G,C
+Invigorating Surge,Instant,3,G,UC
+Life Goes On,Instant,1,G,C
+Llanowar Visionary,Creature,3,G,C
+Ornery Dilophosaur,Creature,4,G,C
+Portcullis Vine,Creature,1,G,C
+Pridemalkin,Creature,3,G,C
+Quirion Dryad,Creature,2,G,UC
+Ranger's Guile,Instant,1,G,C
+Return to Nature,Instant,2,G,C
+Run Afoul,Instant,1,G,C
+Sabertooth Mauler,Creature,4,G,C
+Sanctum of Fruitful Harvest,Enchantment,3,G,UC
+Setessan Training,Aura,2,G,C
+Skyway Sniper,Creature,1,G,UC
+Snaraspinner,Creature,2,G,C
+Thrashing Brontodon,Creature,3,G,UC
+Titanic Growth,Instant,2,G,C
+Track Down,Sorcery,2,G,C
+Trufflesnout,Creature,3,G,C
+Warden of the Woods,Creature,6,G,UC
+Wildwood Scourge,Creature,1,G,UC
+Alpine Houndmaster,Creature,2,RW,UC
+Conclave Mentor,Creature,2,GW,UC
+Dire Fleet Warmonger,Creature,3,BR,UC
+Experimental Overload,Sorcery,4,UR,UC
+Indulging Patrician,Creature,3,WB,UC
+Leafkin Avenger,Creature,4,RG,UC
+Lorescale Coatl,Creature,3,GU,UC
+Obsessive Stitcher,Creature,3,UB,UC
+Twinblade Assassins,Creature,5,BG,UC
+Watcher of the Spheres,Creature,2,WU,UC
+Chrome Replicator,Artifact Creature,5,C,UC
+Epitaph Golem,Artifact Creature,5,C,UC
+Forgotten Sentinel,Artifact Creature,4,C,C
+Meteorite,Artifact,5,C,UC
+Palladium Myr,Artifact Creature,3,C,UC
+Prismite,Artifact Creature,2,C,C
+Short Sword,Equipment,1,C,C
+Silent Dart,Artifact,1,C,C
+Skyscanner,Artifact Creature,3,C,C
+Tormod's Crypt,Artifact,0,C,UC
+Bloodfell Caves,Land,0,BR,C
+Blossoming Sands,Land,0,GW,C
+Dismal Backwater,Land,0,UB,C
+Jungle Hollow,Land,0,BG,C
+Radiant Fountain,Land,0,C,C
+Rugged Highlands,Land,0,RG,C
+Scoured Barrens,Land,0,WB,C
+Swiftwater Cliffs,Land,0,UR,C
+Thornwood Falls,Land,0,GU,C
+Tranquil Cove,Land,0,WU,C
+Wind-Scarred Crag,Land,0,RW,C
+"Teferi, Master of Time",Planeswalker,4,U,M
+"Rin and Seri, Inseparable",Creature,4,RGW,M
+"Ugin, the Spirit Dragon",Planeswalker,8,C,M
+Basri Ket,Planeswalker,3,W,M
+Basri's Acolyte,Creature,4,W,C
+Basri's Lieutenant,Creature,4,W,R
+Basri's Solidarity,Sorcery,2,W,UC
+Teferi's Ageless Insight,Enchantment,4,U,R
+Teferi's Protégé,Creature,3,U,C
+Teferi's Tutelage,Enchantment,3,U,UC
+"Liliana, Waker of the Dead",Planeswalker,4,B,M
+Liliana's Devotee,Creature,3,B,UC
+Liliana's Standard Bearer,Creature,3,B,R
+Liliana's Steward,Creature,1,B,C
+"Chandra, Heart of Fire",Planeswalker,5,R,M
+Chandra's Incinerator,Creature,6,R,R
+Chandra's Magmutt,Creature,2,R,C
+Chandra's Pyreling,Creature,2,R,UC
+"Garruk, Unleashed",Planeswalker,4,G,M
+Garruk's Gorehorn,Creature,5,G,C
+Garruk's Harbinger,Creature,3,G,R
+Garrul's Uprising,Enchantment,3,G,UC
+Plains,Land,0,W,C
+Island,Land,0,U,C
+Swamp,Land,0,B,C
+Mountain,Land,0,R,C
+Forest,Land,0,G,C
+Containment Priest,Creature,2,W,R
+Grim Tutor,Sorcery,3,B,M
+Massacre Wurm,Creature,6,B,M
+Cultivate,Sorcery,3,G,UC
+Scavenging Ooze,Creature,2,G,R
+Solemn Simulacrum,Artifact Creature,4,C,R
+"Basri, Devoted Paladin",Planeswalker,6,W,M
+Adherent of Hope,Creature,2,W,C
+Basri's Aegis,Sorcery,4,W,R
+Sigiled Contender,Creature,4,W,UC
+"Teferi, Timeless Voyager",Planeswalker,6,U,M
+Historian of Zhalfir,Creature,4,U,UC
+Mystic Skyfish,Creature,3,U,C
+Teferi's Wavecaster,Creature,5,U,R
+"Liliana, Death Mage",Planeswalker,6,B,M
+Liliana's Scorn,Sorcery,5,B,R
+Liliana's Scrounger,Creature,3,B,UC
+Spirit of Malevolence,Creature,2,B,C
+"Chandra, Flame's Cataclyst",Planeswalker,6,R,M
+Chandra's Firemaw,Creature,5,R,R
+Keral Keep Disciples,Creature,4,R,UC
+Storm Caller,Creature,3,R,C
+"Garruk, Savage Herald",Planeswalker,6,G,M
+Garruk's Warsteed,Creature,5,G,R
+Predatory Wurm,Creature,4,G,UC
+Wildwood Patrol,Creature,3,G,C
+Baneslayer Angel,Creature,5,W,M
+Glorious Anthem,Enchantment,3,W,R
+Idol of Endurance,Artifact,3,W,R
+"Mangara, the Diplomat",Creature,4,W,M
+Nine Lives,Enchantment,3,W,R
+Pack Leader,Creature,2,W,R
+Runed Halo,Enchantment,2,W,R
+Speaker of the Heavens,Creature,1,W,R
+"Barrin, Tolarian Archmage",Creature,3,U,R
+Discontinuity,Instant,6,U,M
+Ghostly Pilferer,Creature,2,U,R
+Pursued Whale,Creature,7,U,R
+See the Truth,Sorcery,2,U,R
+Shacklegeist,Creature,2,U,R
+Stormwing Entity,Creature,5,U,R
+Sublime Epiphany,Instant,6,U,R
+Demonic Embrace,Aura,3,B,R
+Hooded Blightfang,Creature,3,B,R
+"Kaervek, the Spiteful",Creature,4,B,R
+Necromentia,Sorcery,3,B,R
+Peer into the Abyss,Sorcery,7,B,R
+Thieves' Guild Enforcer,Creature,1,B,R
+"Vito, Thorn of the Dusk Rose",Creature,3,B,R
+Brash Taunter,Creature,5,R,R
+Conspicuous Snoop,Creature,2,R,R
+Double Vision,Enchantment,5,R,R
+Fiery Emancipation,Enchantment,6,R,M
+"Gadrak, the Crown-Scourge",Creature,3,R,R
+"Subira, Tulzidi Caravanner",Creature,3,R,R
+Terror of the Peaks,Creature,5,R,M
+Transmogrify,Sorcery,4,R,R
+Volcanic Salvo,Sorcery,12,R,R
+"Azusa, Lost but Seeking",Creature,3,G,R
+Elder Gargaroth,Creature,5,G,M
+Feline Sovereign,Creature,3,G,R
+Heroic Intervention,Instant,2,G,R
+"Jolrael, Mwonvuli Recluse",Creature,2,G,R
+Primal Might,Sorcery,1,G,R
+Sporeweb Weaver,Creature,3,G,R
+"Niambi, Esteemed Speaker",Creature,2,WU,R
+"Radha, Heart of Keld",Creature,3,RG,R
+Sanctum of All,Enchantment,5,WUBRG,R
+Chromatic Orrery,Artifact,7,C,M
+Mazemind Tome,Artifact,2,C,R
+Sparkhunter Masticore,Artifact Creature,3,C,R
+Animal Sanctuary,Land,0,C,R
+Fabled Passage,Land,0,C,R
+Temple of Epiphany,Land,0,UR,R
+Temple of Malady,Land,0,GB,R
+Temple of Mystery,Land,0,GU,R
+Temple of Silence,Land,0,WB,R
+Temple of Triumph,Land,0,WR,R

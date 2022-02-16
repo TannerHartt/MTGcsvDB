@@ -8,6 +8,14 @@ public class MtgTest {
     public void constructorTest(){
         String name = "Shatterskull Smashing";
         Mtg card = new Mtg(name);
+        card = new Mtg("Shatterskull Smashing", 2 , "Sorcery");
+    }
+
+    @Test
+    public void builderTest() {
+        Mtg actual = Mtg.of().id(1).name("Shatterskull Smashing").type("Sorcery");
+        Assertions.assertEquals("Shatterskull Smashing", actual.getName());
+        actual = Mtg.of().type("Sorcery").name("Shatterskull Smashing").id(2);
     }
 
 }
