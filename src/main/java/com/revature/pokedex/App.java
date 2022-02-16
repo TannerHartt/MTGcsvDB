@@ -8,8 +8,8 @@ public class App {
     public static void main(String[] args) {
         DexRepository dexRepository = new DexRepository("mtgdata.csv");
         DexService dexService = new DexService(dexRepository);
-        DexServer dexServer = new DexServer(dexService);
         SearchService sfService = new SearchService();
+
 
         Tomcat server = new Tomcat();
         server.setBaseDir(System.getProperty("java.io.tmpdir"));
@@ -18,7 +18,6 @@ public class App {
         server.addContext("", null);
 
 
-        server.addServlet("","defaultServlet", new DefaultServlet()).addMapping("/*");
         server.addServlet("","dexServlet", dexService).addMapping("/cards");
         server.addServlet("", "searchFormServlet", sfService).addMapping("/search");
         //System.out.println("Server running on http://localhost:" +
