@@ -18,4 +18,12 @@ public class MtgTest {
         actual = Mtg.of().type("Sorcery").name("Shatterskull Smashing").id(2);
     }
 
+    @Test
+    public void nameTest() {
+        Mtg card = new Mtg("Alpine Watchdog");
+        Assertions.assertEquals(card.getName(), "Alpine Watchdog");
+        card = new Mtg("Shatterskull Smashing");
+        Assertions.assertEquals("Shatterskull Smashing", card.getName());
+    }
+
 }

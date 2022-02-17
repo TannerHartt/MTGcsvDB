@@ -18,7 +18,7 @@ public class DefaultServlet extends HttpServlet {
         InputStream file = getClass().getClassLoader().getResourceAsStream(filename);
         if (file == null) {
             resp.setStatus(404);
-            resp.getWriter().println("File not found");
+            resp.getWriter().println("File not found, try: \n\n http://localhost:8080/cards or \n http://localhost:8080/search");
         }
         IOUtils.copy(file, resp.getOutputStream());
     }

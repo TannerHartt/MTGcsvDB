@@ -16,10 +16,12 @@ public class SearchService extends HttpServlet {
                 "</Title>\n" +
                 "</Head>\n" +
                 "<Body>\n" +
+                "     <h1>Magic The Gathering Search</h1>" +
                 "    <form action='/cards' method='get'>\n" +
                 "        <input type='name' name='searchName'/>\n" +
                 "        <input type='submit' value='Search'/>\n" +
                 "    " +
+                "     <a href='cards'>See full list</a>\n" +
                 "</form>\n" +
                 "</Body>\n" +
                 "</Html>";

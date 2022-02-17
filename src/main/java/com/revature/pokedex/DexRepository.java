@@ -1,15 +1,12 @@
 package com.revature.pokedex;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
 public class DexRepository {
-    private List<String> cards = new ArrayList<>();
+    private List<Mtg> cards = new ArrayList<>();
     private InputStream file;
 
     public DexRepository(String filename){
@@ -24,21 +21,21 @@ public class DexRepository {
         sc.useDelimiter("\n");
         while(sc.hasNext()) {
             String[] cardColumns = sc.next().split(",");
-            Mtg temp = new Mtg(cardColumns[4]);
-            this.cards.add(sc.next());
+            Mtg temp = new Mtg(cardColumns[0]);
+            this.cards.add(temp);
         }
     }
-    public String getCard(String name){
-        String result = "";
-      for (String card : this.cards){
-          if (card.contains(name)) {
-              result = card;
+    public Mtg getCard(String name){
+        Mtg result = null;
+      for (Mtg mtg : this.cards){
+          if (mtg.getName().equals(name)) {
+              result = mtg;
           }
       }
       return result;
     }
 
-    public List<String> getCards() {
+    public List<Mtg> getCards() {
         return cards;
     }
 }

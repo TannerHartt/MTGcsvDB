@@ -21,10 +21,10 @@ public class DexService extends HttpServlet{
         userInput = req.getParameter("searchName");
 
         if (userInput != null) {
-            String result = dexRepository.getCard(userInput);
+            Mtg result = dexRepository.getCard(userInput);
             resp.getWriter().println(result);
         } else {
-            for (String creature : dexRepository.getCards()) {
+            for (Mtg creature : dexRepository.getCards()) {
                 resp.getWriter().println(creature);
             }
         }
