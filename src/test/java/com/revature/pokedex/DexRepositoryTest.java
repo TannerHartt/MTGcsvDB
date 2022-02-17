@@ -1,10 +1,10 @@
-package com.revature.pokedex;
-
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-
-public class DexRepositoryTest {
-
+//package com.revature.pokedex;
+//
+//import org.junit.jupiter.api.Assertions;
+//import org.junit.jupiter.api.Test;
+//
+//public class DexRepositoryTest {
+//
 //    @Test
 //    public void getCardTest() {
 //        DexRepository testRepo = new DexRepository("mtgdatatest.csv");
@@ -12,5 +12,6 @@ public class DexRepositoryTest {
 //        Mtg expected = new Mtg("Archfiend's Vessel");
 //        Assertions.assertEquals(expected.getName(),actual.getName());
 //
+//
 //    }
-}
+//}
