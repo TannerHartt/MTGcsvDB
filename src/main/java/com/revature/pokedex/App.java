@@ -18,7 +18,6 @@ public class App {
         server.getConnector();
         server.addContext("", null);
 
-
         server.addServlet("","defaultServlet", new DefaultServlet()).addMapping("/*");
         server.addServlet("","dexServlet", dexService).addMapping("/cards");
         server.addServlet("", "searchFormServlet", sfService).addMapping("/search");
