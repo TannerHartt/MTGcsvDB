@@ -1,20 +1,29 @@
 package com.revature.pokedex;
+import com.revature.pokedex.repository.CSVDexRepository;
+import com.revature.pokedex.repository.DexRepository;
+import com.revature.pokedex.repository.InMemoryDexRepository;
+import com.revature.pokedex.servlet.DefaultServlet;
+import com.revature.pokedex.servlet.DexService;
+import com.revature.pokedex.servlet.SearchService;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
 
 public class App {
     public static void main(String[] args) {
 
-        //DexRepository dexRepository = new DexRepository("mtgdata.csv");
-        DexRepository dexRepository = new DexRepository("Core2021_CardList.csv");
-        //InMemoryDexRepository dexRepository1 = new InMemoryDexRepository();
+        DexRepository dexRepository;
+        //dexRepository = new DexRepository("mtgdata.csv");
+        dexRepository = new CSVDexRepository("Core2021_CardList.csv");
+        //dexRepository  = new CSVDexRepository("ZendikarRisingSetList.csv");
+        //dexRepository = new InMemoryDexRepository();
+
         DexService dexService = new DexService(dexRepository);
         SearchService sfService = new SearchService();
 
 
         Tomcat server = new Tomcat();
         server.setBaseDir(System.getProperty("java.io.tmpdir"));
-        //server.setPort(0);
+        server.setPort(0);
         server.getConnector();
         server.addContext("", null);
 
@@ -25,6 +34,8 @@ public class App {
 
         try{
             server.start();
+            System.out.println("Server is running on http://localhost:" + server.getConnector().getLocalPort() + "/search");
+            server.getServer().await();
         } catch (LifecycleException e) {
             e.printStackTrace();
         }

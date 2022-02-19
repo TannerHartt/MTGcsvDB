@@ -1,4 +1,4 @@
-package com.revature.pokedex;
+package com.revature.pokedex.servlet;
 
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
