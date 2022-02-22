@@ -1,26 +1,24 @@
-package com.revature.pokedex;
+package com.revature.pokedex.domain;
+
+import java.util.Objects;
 
 public class Mtg {
     // Card Name,Card Type,CMC,Color,Rarity
     private String name;
     private int manaCost;
     private String type;
-    private String rarity;
+
 
     public Mtg() {}
 
-
-    public Mtg(String name, int manaCost, String type, String rarity) {
+    public Mtg(String name, int manaCost, String type) {
         this.name = name;
         this.type = type;
         this.manaCost = manaCost;
-        this.rarity = rarity;
-
-
     }
 
     public Mtg(String name){
-        this(name, -1, "", "");
+        this(name, -1, "");
     }
 
     public static Mtg of() {
@@ -42,11 +40,6 @@ public class Mtg {
         return this;
     }
 
-    public Mtg rarity(String rarity){
-        this.rarity = rarity;
-        return this;
-    }
-
     public String getName(){
         return this.name;
     }
@@ -59,8 +52,31 @@ public class Mtg {
         return type;
     }
 
+//    @Override
+//    public String toString() {
+//        return "Mtg{" +
+//                "name='" + name + '\'' +
+//                ", manaCost=" + manaCost +
+//                ", type='" + type + '\'' +
+//                '}';
+//    }
+
     @Override
     public String toString() {
         return this.name;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Mtg mtg = (Mtg) o;
+        return manaCost == mtg.manaCost && Objects.equals(name, mtg.name) && Objects.equals(type, mtg.type);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, manaCost, type);
+    }
+
 }

@@ -1,6 +1,6 @@
 package com.revature.pokedex.repository;
 
-import com.revature.pokedex.Mtg;
+import com.revature.pokedex.domain.Mtg;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,13 +10,12 @@ public class InMemoryDexRepository implements DexRepository{
 
     public InMemoryDexRepository() {
         cards = new ArrayList<>();
-        cards.add(Mtg.of().manaCost(1).name("ShatterSkull Smashing").type("Sorcery").rarity("M"));
+        cards.add(Mtg.of().manaCost(1).name("ShatterSkull Smashing").type("Sorcery"));
     }
 
     public List<Mtg> getCards() {
         return cards;
     }
-
 
     public Mtg getCard(String name){
         Mtg result = null;

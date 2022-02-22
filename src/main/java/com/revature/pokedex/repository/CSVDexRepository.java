@@ -1,7 +1,6 @@
 package com.revature.pokedex.repository;
 
-import com.revature.pokedex.Mtg;
-
+import com.revature.pokedex.domain.Mtg;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +10,10 @@ public class CSVDexRepository implements DexRepository{
     private List<Mtg> cards = new ArrayList<>();
     private InputStream file;
 
+    /**
+     * Constructor requiring a path to a csv file
+     * @param filename - CSV file to parse
+     */
     public CSVDexRepository(String filename){
         this.cards = new ArrayList<>();
         this.file = getClass().getClassLoader().getResourceAsStream(filename);
@@ -19,7 +22,7 @@ public class CSVDexRepository implements DexRepository{
     }
 
     /**
-     * Reads and parses .csv files and
+     * Reads and parses the Core2021_CardList.csv, loads each new card on a new line.
      */
     private void loadFile() {
         Scanner sc = new Scanner(this.file);

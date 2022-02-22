@@ -1,6 +1,5 @@
 package com.revature.pokedex.servlet;
-import com.revature.pokedex.Mtg;
-import com.revature.pokedex.repository.CSVDexRepository;
+import com.revature.pokedex.domain.Mtg;
 import com.revature.pokedex.repository.DexRepository;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;

@@ -1,7 +1,8 @@
-//package com.revature.pokedex;
+//package com.revature.pokedex.repository;
 //
 //import com.fasterxml.jackson.databind.ObjectMapper;
-//
+//import com.revature.pokedex.repository.DexRepository;
+//import com.revature.pokedex.domain.Mtg;
 //import java.io.IOException;
 //import java.net.URI;
 //import java.net.http.HttpClient;
@@ -25,7 +26,7 @@
 //        } catch (IOException | InterruptedException e) {
 //            e.printStackTrace();
 //        }
-//        return result;
+//        return null;
 //    }
 //    @Override
 //    public List<Mtg> getCards() {
