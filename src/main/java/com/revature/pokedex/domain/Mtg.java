@@ -51,7 +51,7 @@ public class Mtg {
     public String getType() {
         return type;
     }
-
+//
 //    @Override
 //    public String toString() {
 //        return "Mtg{" +

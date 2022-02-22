@@ -11,7 +11,7 @@ public class CSVDexRepository implements DexRepository{
     private InputStream file;
 
     /**
-     * Constructor requiring a path to a csv file
+     * Constructor requiring a path to a csv file, searches system for filename
      * @param filename - CSV file to parse
      */
     public CSVDexRepository(String filename){

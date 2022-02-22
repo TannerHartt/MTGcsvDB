@@ -15,8 +15,9 @@ public class App {
         //dexRepository = new DexRepository("mtgdata.csv");
         dexRepository = new CSVDexRepository("Core2021_CardList.csv");
         //dexRepository  = new CSVDexRepository("ZendikarRisingSetList.csv");
-        //dexRepository = new InMemoryDexRepository();
 
+
+        //dexRepository = new InMemoryDexRepository();
         DexService dexService = new DexService(dexRepository);
         SearchService sfService = new SearchService();
 
