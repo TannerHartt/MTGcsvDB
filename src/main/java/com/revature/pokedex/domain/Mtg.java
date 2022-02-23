@@ -1,12 +1,14 @@
 package com.revature.pokedex.domain;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Mtg {
-    // Card Name,Card Type,CMC,Color,Rarity
+    // Card Name,Card Types,CMC,Color,Rarity
     private String name;
     private int manaCost;
     private String type;
+    private List<java.sql.Types> types;
 
 
     public Mtg() {}

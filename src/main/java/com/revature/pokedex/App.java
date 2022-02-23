@@ -1,9 +1,8 @@
 package com.revature.pokedex;
 import com.revature.pokedex.repository.CSVDexRepository;
 import com.revature.pokedex.repository.DexRepository;
-import com.revature.pokedex.repository.InMemoryDexRepository;
 import com.revature.pokedex.servlet.DefaultServlet;
-import com.revature.pokedex.servlet.DexService;
+import com.revature.pokedex.servlet.DexServlet;
 import com.revature.pokedex.servlet.SearchService;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
@@ -16,9 +15,8 @@ public class App {
         dexRepository = new CSVDexRepository("Core2021_CardList.csv");
         //dexRepository  = new CSVDexRepository("ZendikarRisingSetList.csv");
 
-
         //dexRepository = new InMemoryDexRepository();
-        DexService dexService = new DexService(dexRepository);
+        DexServlet dexServlet = new DexServlet(dexRepository);
         SearchService sfService = new SearchService();
 
 
@@ -29,7 +27,7 @@ public class App {
         server.addContext("", null);
 
         server.addServlet("","defaultServlet", new DefaultServlet()).addMapping("/*");
-        server.addServlet("","dexServlet", dexService).addMapping("/cards");
+        server.addServlet("","dexServlet", dexServlet).addMapping("/cards");
         server.addServlet("", "searchFormServlet", sfService).addMapping("/search");
 
 

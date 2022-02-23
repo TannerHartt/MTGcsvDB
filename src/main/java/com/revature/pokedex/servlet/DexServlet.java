@@ -9,11 +9,11 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-public class DexService extends HttpServlet{
+public class DexServlet extends HttpServlet{
     private DexRepository dexRepository;
 
 
-    public DexService(DexRepository dexRepository ) {
+    public DexServlet(DexRepository dexRepository ) {
         this.dexRepository = dexRepository;
     }
 
@@ -24,9 +24,7 @@ public class DexService extends HttpServlet{
 
         if (userInput != null) {
             Mtg result = dexRepository.getCard(userInput);
-            Mtg second = dexRepository.getCard(userInput);
             resp.getWriter().println(result);
-            resp.getWriter().println(second);
         } else {
             for (Mtg creature : dexRepository.getCards()) {
                 resp.getWriter().println(creature);

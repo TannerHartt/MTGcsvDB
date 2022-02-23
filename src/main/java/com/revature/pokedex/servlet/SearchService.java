@@ -1,5 +1,6 @@
 package com.revature.pokedex.servlet;
 
+import com.revature.pokedex.domain.Mtg;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;

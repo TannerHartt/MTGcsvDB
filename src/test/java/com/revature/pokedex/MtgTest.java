@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class MtgTest {
     @Test
     public void constructorTest(){
-        // Card Name,Card Type,CMC,Color,Rarity
+        // Card Name,Card Types,CMC,Color,Rarity
         String name = "Shatterskull Smashing";
         Mtg card = new Mtg(name);
         card = new Mtg("Shatterskull Smashing", 2 , "Sorcery");
