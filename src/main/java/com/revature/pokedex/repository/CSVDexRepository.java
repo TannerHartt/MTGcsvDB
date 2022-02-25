@@ -30,7 +30,9 @@ public class CSVDexRepository implements DexRepository{
         while(sc.hasNext()) {
             String[] cardColumns = sc.next().split(",");
             Mtg temp = new Mtg(cardColumns[0]);
+            Mtg type = new Mtg(cardColumns[1]);
             this.cards.add(temp);
+            this.cards.add(type);
         }
     }
 

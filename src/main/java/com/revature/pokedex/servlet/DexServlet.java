@@ -1,5 +1,6 @@
 package com.revature.pokedex.servlet;
 import com.revature.pokedex.domain.Mtg;
+import com.revature.pokedex.repository.CSVDexRepository;
 import com.revature.pokedex.repository.DexRepository;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -26,9 +27,11 @@ public class DexServlet extends HttpServlet{
             Mtg result = dexRepository.getCard(userInput);
             resp.getWriter().println(result);
         } else {
+            //resp.getWriter().println("<table><tr><td>Creature Name</td><td>Mana Cost</td><td>Type</td></tr>");
             for (Mtg creature : dexRepository.getCards()) {
-                resp.getWriter().println(creature);
+                resp.getWriter().println(creature + " " );
             }
+            // Print every other array element on a new line
         }
     }
 }

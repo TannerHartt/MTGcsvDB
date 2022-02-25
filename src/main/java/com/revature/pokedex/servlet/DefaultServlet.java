@@ -10,7 +10,6 @@ import java.io.InputStream;
 
 public class DefaultServlet extends HttpServlet {
 
-
     /**
      * A default servlet that sends a 404 error message if no file was was found, and provides correct links
      * @param req   http request

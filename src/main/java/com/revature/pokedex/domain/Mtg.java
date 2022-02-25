@@ -20,8 +20,10 @@ public class Mtg {
     }
 
     public Mtg(String name){
-        this(name, -1, "");
+        this(name, of().manaCost, of().type);
     }
+
+
 
     public static Mtg of() {
         return new Mtg();
@@ -53,7 +55,7 @@ public class Mtg {
     public String getType() {
         return type;
     }
-//
+
 //    @Override
 //    public String toString() {
 //        return "Mtg{" +
