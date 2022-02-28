@@ -8,14 +8,17 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 
 
 public class DexServlet extends HttpServlet{
     private DexRepository dexRepository;
+    private DexRepository secondFile;
 
 
-    public DexServlet(DexRepository dexRepository ) {
+    public DexServlet(DexRepository dexRepository, DexRepository secondFile) {
         this.dexRepository = dexRepository;
+        this.dexRepository = secondFile;
     }
 
 
@@ -25,13 +28,19 @@ public class DexServlet extends HttpServlet{
 
         if (userInput != null) {
             Mtg result = dexRepository.getCard(userInput);
+            //Mtg second = secondFile.getCard((userInput));
             resp.getWriter().println(result);
+            //resp.getWriter().println(second);
         } else {
             //resp.getWriter().println("<table><tr><td>Creature Name</td><td>Mana Cost</td><td>Type</td></tr>");
             for (Mtg creature : dexRepository.getCards()) {
-                resp.getWriter().println(creature + " " );
+                resp.getWriter().println(creature + " ");
             }
+//            for (Mtg creature : secondFile.getCards()) {
+//                resp.getWriter().println(creature + " ");
+//            }
             // Print every other array element on a new line
         }
+
     }
 }

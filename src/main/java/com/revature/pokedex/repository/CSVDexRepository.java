@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class CSVDexRepository implements DexRepository{
     private List<Mtg> cards = new ArrayList<>();
+    private List<Mtg> secondList = new ArrayList<>();
     private InputStream file;
 
     /**
@@ -30,16 +31,16 @@ public class CSVDexRepository implements DexRepository{
         while(sc.hasNext()) {
             String[] cardColumns = sc.next().split(",");
             Mtg temp = new Mtg(cardColumns[0]);
-            Mtg type = new Mtg(cardColumns[1]);
+            Mtg type = new Mtg(cardColumns[0]);
             this.cards.add(temp);
-            this.cards.add(type);
+            this.secondList.add(type);
         }
     }
 
     /**
-     * getCard takes in a name
-     * @param name
-     * @return
+     * getCard takes in a card name and searches through the object arraylist cards for the desired card object.
+     * @param name card name to search for.
+     * @return the card object with the specified name.
      */
     public Mtg getCard(String name){
         Mtg result = null;
@@ -50,7 +51,6 @@ public class CSVDexRepository implements DexRepository{
       }
       return result;
     }
-
     public List<Mtg> getCards() {
         return cards;
     }
