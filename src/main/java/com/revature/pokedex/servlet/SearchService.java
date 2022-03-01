@@ -15,6 +15,14 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SearchService extends HttpServlet {
+
+    /**
+     * Overriding the doGet method to print how the search page will look
+     * @param req Http request
+     * @param resp  Http Response
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String HTMLForm = "<Html>\n" +
@@ -28,15 +36,16 @@ public class SearchService extends HttpServlet {
                 "        <form action='/cards' method='get'>\n" +
                 "               <input type='name' name='searchName'/>\n" +
                 "               <input type='submit' value='Search'/>\n" +
-                "        <form action='/card' method='get'>\n" +
+                "        <form action='/rising' method='get'>\n" +
                 "    "  +
                 "     <a href='cards'>See full Core 2021 set list</a>\n" +
-                "     <a href='card'>See full Zendikar Rising set list</a\n" +
+                "     <a href='rising'>See full Zendikar Rising set list</a\n" +
                 "</form>\n" +
                 "</Body>\n" +
                 "</Html>";
         resp.getWriter().println(HTMLForm);
     }
+
     public static void searchReturnAll() throws IOException {
 
         String file = "src/Core2021_CardList.csv";

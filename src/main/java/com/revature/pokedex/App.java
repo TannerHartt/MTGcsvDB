@@ -19,13 +19,13 @@ public class App {
     public static void main(String[] args) {
 
         DexRepository dexRepository;
-        DexRepository dexRepository1;
+        DexRepository secondFile;
         //dexRepository = new DexRepository("mtgdata.csv");
         dexRepository = new CSVDexRepository("Core2021_CardList.csv");
-        dexRepository1  = new CSVDexRepository("ZendikarRisingSetList.csv");
+        secondFile  = new CSVDexRepository("ZendikarRisingSetList.csv");
 
         //dexRepository = new InMemoryDexRepository();
-        DexServlet dexServlet = new DexServlet(dexRepository, dexRepository1);
+        DexServlet dexServlet = new DexServlet(dexRepository, secondFile);
         SearchService sfService = new SearchService();
 
         /**
@@ -34,6 +34,7 @@ public class App {
          *  Adds servlets that run the specified class and adds a mapping to use in the url to run given class.
          *  Sets server port to a random, available port using setPort(0);
          */
+
         Tomcat server = new Tomcat();
         server.setBaseDir(System.getProperty("java.io.tmpdir"));
         server.setPort(0);
@@ -41,7 +42,7 @@ public class App {
         server.addContext("", null);
         server.addServlet("","defaultServlet", new DefaultServlet()).addMapping("/*");
         server.addServlet("","dexServlet", dexServlet).addMapping("/cards");
-        server.addServlet("", "dexServlet1", dexServlet).addMapping("/card");
+        server.addServlet("", "dexServlet1", dexServlet).addMapping("/rising");
         server.addServlet("", "searchFormServlet", sfService).addMapping("/search");
 
         /**

@@ -179,25 +179,25 @@ Swiftwater Cliffs,Land,0,UR,C
 Thornwood Falls,Land,0,GU,C
 Tranquil Cove,Land,0,WU,C
 Wind-Scarred Crag,Land,0,RW,C
-"Teferi, Master of Time",Planeswalker,4,U,M
-"Rin and Seri, Inseparable",Creature,4,RGW,M
-"Ugin, the Spirit Dragon",Planeswalker,8,C,M
+Teferi, Master of Time,Planeswalker,4,U,M
+Rin and Seri, Inseparable,Creature,4,RGW,M
+Ugin, the Spirit Dragon,Planeswalker,8,C,M
 Basri Ket,Planeswalker,3,W,M
 Basri's Acolyte,Creature,4,W,C
 Basri's Lieutenant,Creature,4,W,R
 Basri's Solidarity,Sorcery,2,W,UC
 Teferi's Ageless Insight,Enchantment,4,U,R
-Teferi's Protégé,Creature,3,U,C
+Teferi's Protï¿½gï¿½,Creature,3,U,C
 Teferi's Tutelage,Enchantment,3,U,UC
-"Liliana, Waker of the Dead",Planeswalker,4,B,M
+Liliana, Waker of the Dead,Planeswalker,4,B,M
 Liliana's Devotee,Creature,3,B,UC
 Liliana's Standard Bearer,Creature,3,B,R
 Liliana's Steward,Creature,1,B,C
-"Chandra, Heart of Fire",Planeswalker,5,R,M
+Chandra, Heart of Fire,Planeswalker,5,R,M
 Chandra's Incinerator,Creature,6,R,R
 Chandra's Magmutt,Creature,2,R,C
 Chandra's Pyreling,Creature,2,R,UC
-"Garruk, Unleashed",Planeswalker,4,G,M
+Garruk, Unleashed,Planeswalker,4,G,M
 Garruk's Gorehorn,Creature,5,G,C
 Garruk's Harbinger,Creature,3,G,R
 Garrul's Uprising,Enchantment,3,G,UC
@@ -212,35 +212,35 @@ Massacre Wurm,Creature,6,B,M
 Cultivate,Sorcery,3,G,UC
 Scavenging Ooze,Creature,2,G,R
 Solemn Simulacrum,Artifact Creature,4,C,R
-"Basri, Devoted Paladin",Planeswalker,6,W,M
+Basri, Devoted Paladin,Planeswalker,6,W,M
 Adherent of Hope,Creature,2,W,C
 Basri's Aegis,Sorcery,4,W,R
 Sigiled Contender,Creature,4,W,UC
-"Teferi, Timeless Voyager",Planeswalker,6,U,M
+Teferi, Timeless Voyager,Planeswalker,6,U,M
 Historian of Zhalfir,Creature,4,U,UC
 Mystic Skyfish,Creature,3,U,C
 Teferi's Wavecaster,Creature,5,U,R
-"Liliana, Death Mage",Planeswalker,6,B,M
+Liliana, Death Mage,Planeswalker,6,B,M
 Liliana's Scorn,Sorcery,5,B,R
 Liliana's Scrounger,Creature,3,B,UC
 Spirit of Malevolence,Creature,2,B,C
-"Chandra, Flame's Cataclyst",Planeswalker,6,R,M
+Chandra, Flame's Cataclyst,Planeswalker,6,R,M
 Chandra's Firemaw,Creature,5,R,R
 Keral Keep Disciples,Creature,4,R,UC
 Storm Caller,Creature,3,R,C
-"Garruk, Savage Herald",Planeswalker,6,G,M
+Garruk, Savage Herald,Planeswalker,6,G,M
 Garruk's Warsteed,Creature,5,G,R
 Predatory Wurm,Creature,4,G,UC
 Wildwood Patrol,Creature,3,G,C
 Baneslayer Angel,Creature,5,W,M
 Glorious Anthem,Enchantment,3,W,R
 Idol of Endurance,Artifact,3,W,R
-"Mangara, the Diplomat",Creature,4,W,M
+Mangara, the Diplomat,Creature,4,W,M
 Nine Lives,Enchantment,3,W,R
 Pack Leader,Creature,2,W,R
 Runed Halo,Enchantment,2,W,R
 Speaker of the Heavens,Creature,1,W,R
-"Barrin, Tolarian Archmage",Creature,3,U,R
+Barrin, Tolarian Archmage,Creature,3,U,R
 Discontinuity,Instant,6,U,M
 Ghostly Pilferer,Creature,2,U,R
 Pursued Whale,Creature,7,U,R
@@ -250,29 +250,29 @@ Stormwing Entity,Creature,5,U,R
 Sublime Epiphany,Instant,6,U,R
 Demonic Embrace,Aura,3,B,R
 Hooded Blightfang,Creature,3,B,R
-"Kaervek, the Spiteful",Creature,4,B,R
+Kaervek, the Spiteful,Creature,4,B,R
 Necromentia,Sorcery,3,B,R
 Peer into the Abyss,Sorcery,7,B,R
 Thieves' Guild Enforcer,Creature,1,B,R
-"Vito, Thorn of the Dusk Rose",Creature,3,B,R
+Vito, Thorn of the Dusk Rose,Creature,3,B,R
 Brash Taunter,Creature,5,R,R
 Conspicuous Snoop,Creature,2,R,R
 Double Vision,Enchantment,5,R,R
 Fiery Emancipation,Enchantment,6,R,M
-"Gadrak, the Crown-Scourge",Creature,3,R,R
-"Subira, Tulzidi Caravanner",Creature,3,R,R
+Gadrak, the Crown-Scourge,Creature,3,R,R
+Subira, Tulzidi Caravanner,Creature,3,R,R
 Terror of the Peaks,Creature,5,R,M
 Transmogrify,Sorcery,4,R,R
 Volcanic Salvo,Sorcery,12,R,R
-"Azusa, Lost but Seeking",Creature,3,G,R
+Azusa, Lost but Seeking,Creature,3,G,R
 Elder Gargaroth,Creature,5,G,M
 Feline Sovereign,Creature,3,G,R
 Heroic Intervention,Instant,2,G,R
-"Jolrael, Mwonvuli Recluse",Creature,2,G,R
+Jolrael, Mwonvuli Recluse,Creature,2,G,R
 Primal Might,Sorcery,1,G,R
 Sporeweb Weaver,Creature,3,G,R
-"Niambi, Esteemed Speaker",Creature,2,WU,R
-"Radha, Heart of Keld",Creature,3,RG,R
+Niambi, Esteemed Speaker,Creature,2,WU,R
+Radha, Heart of Keld,Creature,3,RG,R
 Sanctum of All,Enchantment,5,WUBRG,R
 Chromatic Orrery,Artifact,7,C,M
 Mazemind Tome,Artifact,2,C,R
