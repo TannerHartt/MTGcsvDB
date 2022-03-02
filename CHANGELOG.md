@@ -58,3 +58,4 @@ Sunday, 2/27/2022
 Tuesday, 3/1/2022
 ```
 - Improvements to the search service with background image and MTG logo 
+- Added a sample card image to the search servlet

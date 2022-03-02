@@ -31,12 +31,12 @@ public class SearchService extends HttpServlet {
                 "</Title>\n" +
                 "</Head>\n" +
                 "<Body>\n" +
-                "        <center><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Magicthegathering-logo.svg/512px-Magicthegathering-logo.svg.png?20160501122627>" +
-                "        <h1>Magic The Gathering Search</h1>" +
-                "        <form action='/cards' method='get'>\n" +
+                "         <br><center><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Magicthegathering-logo.svg/512px-Magicthegathering-logo.svg.png?20160501122627>" +
+                "         <h1>Magic The Gathering Search</h1>" +
+                "         <form action='/all' method='get'>\n" +
                 "               <input type='name' name='searchName'/>\n" +
                 "               <input type='submit' value='Search'/>\n" +
-                "        <form action='/rising' method='get'>\n" +
+                "         <form action='/rising' method='get'>\n" +
                 "   <br>  "  +
                 "   <br>  <a href='all'>See list of all cards</a\n <br>" +
                 "   <br>  <a href='cards'>See full Core 2021 set list</a>\n " +

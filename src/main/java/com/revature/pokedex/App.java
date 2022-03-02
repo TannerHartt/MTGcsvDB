@@ -16,12 +16,13 @@ import java.util.List;
 public class App {
     public static void main(String[] args) {
 
+        /*
+        Setting up instances of the CSVDexRepository file and passing in my desired csv file to be loaded and parsed
+         */
         DexRepository dexRepository = new CSVDexRepository("Core2021_CardList.csv");;
         DexRepository zendikarRising = new CSVDexRepository("ZendikarRisingSetList.csv");
         DexRepository allList = new CSVDexRepository("historyOfSet.csv");
         DexRepository typesList = new CSVDexRepository("cards.csv");
-
-
         //dexRepository = new InMemoryDexRepository();
         DexServlet dexServlet = new DexServlet(dexRepository);
         RisingServlet risingServlet = new RisingServlet(zendikarRising);
@@ -45,8 +46,6 @@ public class App {
         server.addServlet("", "dexServlet2", allCardsServlet).addMapping("/all");
         server.addServlet("", "searchFormServlet", sfService).addMapping("/search");
 
-
-
         /*
           Starts server and provides a link to the home page of the server
          */
@@ -58,11 +57,11 @@ public class App {
             e.printStackTrace();
         }
 
-        try {
-            searchReturnAll();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            searchReturnAll();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
 

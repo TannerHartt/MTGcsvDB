@@ -33,7 +33,7 @@ public class CSVDexRepository implements DexRepository{
             Mtg temp = new Mtg(cardColumns[0]);
             Mtg type = new Mtg(cardColumns[1]);
             this.cards.add(temp);
-            this.types.add(type);
+            //this.cards.add(type);
         }
     }
 
