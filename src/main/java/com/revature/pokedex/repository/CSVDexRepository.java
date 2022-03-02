@@ -8,7 +8,9 @@ import java.util.Scanner;
 
 public class CSVDexRepository implements DexRepository{
     private List<Mtg> cards = new ArrayList<>();
+    private List<Mtg> types = new ArrayList<>();
     private InputStream file;
+
 
     /**
      * Constructor requiring a path to a csv file, searches system for filename
@@ -21,7 +23,7 @@ public class CSVDexRepository implements DexRepository{
     }
 
     /**
-     * Reads and parses the Core2021_CardList.csv, loads each new card on a new line.
+     * A utility method to load in a CSV and add the first element to a list
      */
     private void loadFile() {
         Scanner sc = new Scanner(this.file);
@@ -29,6 +31,17 @@ public class CSVDexRepository implements DexRepository{
         while(sc.hasNext()) {
             String[] cardColumns = sc.next().split(",");
             Mtg temp = new Mtg(cardColumns[0]);
+            Mtg type = new Mtg(cardColumns[1]);
+            this.cards.add(temp);
+            this.types.add(type);
+        }
+    }
+    private void loadTypesFile() {
+        Scanner sc = new Scanner(this.file);
+        sc.useDelimiter("\n");
+        while(sc.hasNext()) {
+            String[] cardColumns = sc.next().split(",");
+            Mtg temp = new Mtg(cardColumns[1]);
             this.cards.add(temp);
         }
     }
@@ -49,5 +62,8 @@ public class CSVDexRepository implements DexRepository{
     }
     public List<Mtg> getCards() {
         return cards;
+    }
+    public List<Mtg> getTypes() {
+        return types;
     }
 }

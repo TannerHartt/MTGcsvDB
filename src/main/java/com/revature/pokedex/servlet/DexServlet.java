@@ -11,37 +11,31 @@ import java.io.IOException;
 
 public class DexServlet extends HttpServlet{
     private DexRepository dexRepository;
-    private DexRepository secondFile;
 
 
-    public DexServlet(DexRepository dexRepository, DexRepository secondFile) {
+    public DexServlet(DexRepository dexRepository) {
         this.dexRepository = dexRepository;
-        this.secondFile = secondFile;
     }
 
-
+    /**
+     * Overriding the doGet method to print the names of cards on a new line
+     * @param req Http request
+     * @param resp Http response
+     * @throws ServletException 
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String userInput = req.getParameter("searchName");
-        String set = req.getParameter("set");
-
-
+        String set = req.getParameter("searchName");
 
         if (userInput != null) {
             Mtg result = dexRepository.getCard(userInput);
-            Mtg second = secondFile.getCard((userInput));
             resp.getWriter().println(result);
-            resp.getWriter().println(second);
         } else {
-            //resp.getWriter().println("<table><tr><td>Creature Name</td><td>Mana Cost</td><td>Type</td></tr>");
-
             for (Mtg creature : dexRepository.getCards()) {
                 resp.getWriter().println(creature + " ");
             }
-            resp.getWriter().println("\n");
-            for (Mtg creature : secondFile.getCards()) {
-                    resp.getWriter().println(creature + " ");
-            }
-        } // Print every other array element on a new line
+        }
     }
 }

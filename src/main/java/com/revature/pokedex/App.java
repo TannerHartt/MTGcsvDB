@@ -1,9 +1,7 @@
 package com.revature.pokedex;
 import com.revature.pokedex.repository.CSVDexRepository;
 import com.revature.pokedex.repository.DexRepository;
-import com.revature.pokedex.servlet.DefaultServlet;
-import com.revature.pokedex.servlet.DexServlet;
-import com.revature.pokedex.servlet.SearchService;
+import com.revature.pokedex.servlet.*;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
 
@@ -18,14 +16,16 @@ import java.util.List;
 public class App {
     public static void main(String[] args) {
 
-        DexRepository dexRepository;
-        DexRepository secondFile;
-        //dexRepository = new DexRepository("mtgdata.csv");
-        dexRepository = new CSVDexRepository("Core2021_CardList.csv");
-        secondFile  = new CSVDexRepository("ZendikarRisingSetList.csv");
+        DexRepository dexRepository = new CSVDexRepository("Core2021_CardList.csv");;
+        DexRepository zendikarRising = new CSVDexRepository("ZendikarRisingSetList.csv");
+        DexRepository allList = new CSVDexRepository("historyOfSet.csv");
+        //DexRepository typesList = new CSVDexRepository("cards.csv");
+
 
         //dexRepository = new InMemoryDexRepository();
-        DexServlet dexServlet = new DexServlet(dexRepository, secondFile);
+        DexServlet dexServlet = new DexServlet(dexRepository);
+        RisingServlet risingServlet = new RisingServlet(zendikarRising);
+        AllCardsServlet allCardsServlet = new AllCardsServlet(allList);
         SearchService sfService = new SearchService();
 
         /**
@@ -34,7 +34,6 @@ public class App {
          *  Adds servlets that run the specified class and adds a mapping to use in the url to run given class.
          *  Sets server port to a random, available port using setPort(0);
          */
-
         Tomcat server = new Tomcat();
         server.setBaseDir(System.getProperty("java.io.tmpdir"));
         server.setPort(0);
@@ -42,11 +41,14 @@ public class App {
         server.addContext("", null);
         server.addServlet("","defaultServlet", new DefaultServlet()).addMapping("/*");
         server.addServlet("","dexServlet", dexServlet).addMapping("/cards");
-        server.addServlet("", "dexServlet1", dexServlet).addMapping("/rising");
+        server.addServlet("", "dexServlet1", risingServlet).addMapping("/rising");
+        server.addServlet("", "dexServlet2", allCardsServlet).addMapping("/all");
         server.addServlet("", "searchFormServlet", sfService).addMapping("/search");
 
-        /**
-         * Starts server and provides a link to the home page of the server
+
+
+        /*
+          Starts server and provides a link to the home page of the server
          */
         try{
             server.start();
@@ -61,7 +63,6 @@ public class App {
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
-
     }
 
 
