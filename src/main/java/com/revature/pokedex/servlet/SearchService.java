@@ -42,6 +42,7 @@ public class SearchService extends HttpServlet {
                 "   <br>  <a href='cards'>See full Core 2021 set list</a>\n " +
                 "   <br>  <a href='rising'>See full Zendikar Rising set list</a>\n <br>" +
                 "   <body style='background-image: url(img.jpg); background-repeat:no-repeat; background-size: cover'> " +
+                "   <br><br><img src=https://product-images.tcgplayer.com/fit-in/400x558/48139.jpg>" +
                 "</form>\n" +
                 "</Body>\n" +
                 "</Html>";
