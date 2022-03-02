@@ -23,8 +23,6 @@ public class Mtg {
         this(name, of().manaCost, of().type);
     }
 
-
-
     public static Mtg of() {
         return new Mtg();
     }

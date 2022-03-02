@@ -21,13 +21,12 @@ public class DexServlet extends HttpServlet{
      * Overriding the doGet method to print the names of cards on a new line
      * @param req Http request
      * @param resp Http response
-     * @throws ServletException 
+     * @throws ServletException
      * @throws IOException
      */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String userInput = req.getParameter("searchName");
-        String set = req.getParameter("searchName");
 
         if (userInput != null) {
             Mtg result = dexRepository.getCard(userInput);

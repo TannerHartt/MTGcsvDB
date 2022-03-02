@@ -19,7 +19,7 @@ public class App {
         DexRepository dexRepository = new CSVDexRepository("Core2021_CardList.csv");;
         DexRepository zendikarRising = new CSVDexRepository("ZendikarRisingSetList.csv");
         DexRepository allList = new CSVDexRepository("historyOfSet.csv");
-        //DexRepository typesList = new CSVDexRepository("cards.csv");
+        DexRepository typesList = new CSVDexRepository("cards.csv");
 
 
         //dexRepository = new InMemoryDexRepository();
@@ -28,11 +28,11 @@ public class App {
         AllCardsServlet allCardsServlet = new AllCardsServlet(allList);
         SearchService sfService = new SearchService();
 
-        /**
-         *  Initializes a new instance of the Tomcat class making a server, then sets the base directory so the server
-         *  knows where the files are stored.
-         *  Adds servlets that run the specified class and adds a mapping to use in the url to run given class.
-         *  Sets server port to a random, available port using setPort(0);
+        /*
+           Initializes a new instance of the Tomcat class making a server, then sets the base directory so the server
+           knows where the files are stored.
+           Adds servlets that run the specified class and adds a mapping to use in the url to run given class.
+           Sets server port to a random, available port using setPort(0);
          */
         Tomcat server = new Tomcat();
         server.setBaseDir(System.getProperty("java.io.tmpdir"));
@@ -58,11 +58,11 @@ public class App {
             e.printStackTrace();
         }
 
-//        try {
-//            searchReturnAll();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            searchReturnAll();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 

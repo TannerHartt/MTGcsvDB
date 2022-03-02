@@ -36,15 +36,18 @@ public class CSVDexRepository implements DexRepository{
             this.types.add(type);
         }
     }
-    private void loadTypesFile() {
-        Scanner sc = new Scanner(this.file);
-        sc.useDelimiter("\n");
-        while(sc.hasNext()) {
-            String[] cardColumns = sc.next().split(",");
-            Mtg temp = new Mtg(cardColumns[1]);
-            this.cards.add(temp);
-        }
-    }
+
+    // Niche load method I used for a specific csv file
+
+//    private void loadTypesFile() {
+//        Scanner sc = new Scanner(this.file);
+//        sc.useDelimiter("\n");
+//        while(sc.hasNext()) {
+//            String[] cardColumns = sc.next().split(",");
+//            Mtg temp = new Mtg(cardColumns[1]);
+//            this.cards.add(temp);
+//        }
+//    }
 
     /**
      * getCard takes in a card name and searches through the object arraylist cards for the desired card object.

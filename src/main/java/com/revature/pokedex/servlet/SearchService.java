@@ -37,7 +37,7 @@ public class SearchService extends HttpServlet {
                 "               <input type='name' name='searchName'/>\n" +
                 "               <input type='submit' value='Search'/>\n" +
                 "        <form action='/rising' method='get'>\n" +
-                "  <br>  "  +
+                "   <br>  "  +
                 "   <br>  <a href='all'>See list of all cards</a\n <br>" +
                 "   <br>  <a href='cards'>See full Core 2021 set list</a>\n " +
                 "   <br>  <a href='rising'>See full Zendikar Rising set list</a>\n <br>" +

@@ -19,22 +19,15 @@ public class AllCardsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String userInput = req.getParameter("searchName");
-        String set = req.getParameter("searchName");
-
-
 
         if (userInput != null) {
             Mtg result = dexRepository.getCard(userInput);
-
             resp.getWriter().println(result);
-
         } else {
-            //resp.getWriter().println("<table><tr><td>Creature Name</td><td>Mana Cost</td><td>Type</td></tr>");
             for (Mtg creature : dexRepository.getCards()) {
                 resp.getWriter().println(creature + " ");
             }
             resp.getWriter().println("\n");
-
         }
     }
 }
