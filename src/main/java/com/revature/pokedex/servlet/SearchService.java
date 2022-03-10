@@ -28,9 +28,11 @@ public class SearchService extends HttpServlet {
         String HTMLForm = "<Html>\n" +
                 "<Head>\n" +
                 "    <Title>Search MTG Cards" +
+                // title, meta, link
                 "</Title>\n" +
                 "</Head>\n" +
                 "<Body>\n" +
+                // div , a , p , h1-h6
                 "         <br><center><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Magicthegathering-logo.svg/512px-Magicthegathering-logo.svg.png?20160501122627>" +
                 "         <h1>Magic The Gathering Search</h1>" +
                 "         <form action='/all' method='get'>\n" +
@@ -49,8 +51,8 @@ public class SearchService extends HttpServlet {
         resp.getWriter().println(HTMLForm);
     }
 
-    public static void searchReturnAll() throws IOException {
 
+    public static void searchReturnAll() throws IOException {
         String file = "src/Core2021_CardList.csv";
         String searchTerm = "Dub";
         List<String[]> data = new ArrayList<>();
